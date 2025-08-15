@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chanchu's Recipe Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📖 Chanchu's Recipe Book</h1>
+  <input type="text" id="search" placeholder="Search recipes...">
+</header>
+
+<main>
+  <section class="add-recipe">
+    <h2>Add a Recipe</h2>
+    <input type="text" id="recipeName" placeholder="Recipe Name">
+    <input type="text" id="recipeIngredients" placeholder="Ingredients (comma-separated)">
+    <textarea id="recipeSteps" placeholder="Steps"></textarea>
+    <input type="file" id="recipeImage" accept="image/*">
+    <button id="addRecipe">Add Recipe</button>
+  </section>
+
+  <section class="recipes">
+    <h2>Recipes</h2>
+    <div id="recipeList"></div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImage" src="" alt="Recipe Image">
+    <p><strong>Ingredients:</strong></p>
+    <div id="modalIngredients"></div>
+
+   <p><strong>Steps:</strong></p>
+   <div id="modalSteps"></div>
+
+  </div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
